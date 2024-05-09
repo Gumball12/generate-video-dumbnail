@@ -1,0 +1,10 @@
+{
+  "packageManager": "pnpm@9.1.0",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=20.0.0",
+    "yarn": "please-use-pnpm",
+    "npm": "please-use-pnpm",
+    "pnpm": ">=9.0.0"
+  }
+}
