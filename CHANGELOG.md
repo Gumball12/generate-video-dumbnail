@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/Gumball12/generate-video-dumbnail/compare/v0.1.3...v0.1.4) (2024-05-30)
+
+
+### Bug Fixes
+
+* add registry-url to setup-node ([0708c32](https://github.com/Gumball12/generate-video-dumbnail/commit/0708c329a75addb26db8e0d7ff8ad960e9379392))
+
 ### [0.1.3](https://github.com/Gumball12/generate-video-dumbnail/compare/v0.1.1...v0.1.3) (2024-05-30)
 
 
