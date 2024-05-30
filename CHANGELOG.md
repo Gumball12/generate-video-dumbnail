@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/Gumball12/generate-video-dumbnail/compare/v0.1.0...v0.1.1) (2024-05-30)
+
+
+### Features
+
+* set workflows ([94664da](https://github.com/Gumball12/generate-video-dumbnail/commit/94664daae1b3fd056371df5f0245a420836da8af))
+
 ## 0.1.0 (2024-05-30)
 
 
