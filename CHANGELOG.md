@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/Gumball12/generate-video-dumbnail/compare/v0.1.1...v0.1.3) (2024-05-30)
+
+
+### Bug Fixes
+
+* use tsup config file for iife globalName ([0efa3b2](https://github.com/Gumball12/generate-video-dumbnail/commit/0efa3b232c22d769595b849c94d2078bcf1207a0))
+
 ### [0.1.1](https://github.com/Gumball12/generate-video-dumbnail/compare/v0.1.0...v0.1.1) (2024-05-30)
 
 
