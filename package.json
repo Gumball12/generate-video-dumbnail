@@ -40,12 +40,14 @@
   "scripts": {
     "test": "vitest run --coverage",
     "build": "tsup src/index.ts --minify --dts --format cjs,esm,iife --out-dir dist",
-    "dev": "cd demo && pnpm dev"
+    "dev": "cd demo && pnpm dev",
+    "release": "standard-version"
   },
   "devDependencies": {
     "@vitest/browser": "^1.6.0",
     "@vitest/coverage-istanbul": "^1.6.0",
     "prettier": "^3.2.5",
+    "standard-version": "^9.5.0",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5",
     "vite": "^5.2.11",
