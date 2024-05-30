@@ -107,13 +107,10 @@ const generateVideoThumbnailWithBlobUrl = (
   options?: GenerateVideoThumbnailOptions,
 ): Promise<string> =>
   new Promise(resolve => {
-    console.log('>> 1');
     const videoElement = createVideoElement(src);
 
     videoElement.addEventListener('seeked', async () => {
-      console.log('>> 4');
       await new Promise(resolve => setTimeout(resolve, 100));
-      console.log('>> 5');
 
       const ctx = createCanvasCtx(calcCanvasSize(videoElement, options?.size));
       ctx.drawImage(videoElement, 0, 0, ctx.canvas.width, ctx.canvas.height);
@@ -129,9 +126,7 @@ const generateVideoThumbnailWithBlobUrl = (
       resolve(url);
     });
 
-    console.log('>> 2', src);
     videoElement.addEventListener('loadedmetadata', () => {
-      console.log('>> 3');
       videoElement.currentTime = thumbnailPosition;
     });
   });
