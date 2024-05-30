@@ -39,7 +39,7 @@
   },
   "scripts": {
     "test": "vitest run --coverage",
-    "build": "tsup src/index.ts --minify --dts --format cjs,esm,iife --out-dir dist",
+    "build": "tsup src/index.ts",
     "dev": "cd demo && pnpm dev",
     "release": "standard-version"
   },
