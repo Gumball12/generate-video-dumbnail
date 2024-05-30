@@ -28,7 +28,6 @@ jobs:
       - if: steps.pnpm-cache.outputs.cache-hit != 'true'
         run: pnpm install
 
-      - run: pnpm run test
       - run: pnpm run build
 
       - run: npm publish

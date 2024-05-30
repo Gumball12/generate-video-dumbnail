@@ -1,12 +1,14 @@
 # generate-video-dumbnail
 
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/generate-video-dumbnail) ![NPM Downloads](https://img.shields.io/npm/dm/generate-video-dumbnail) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/generate-video-dumbnail) ![NPM Version](https://img.shields.io/npm/v/generate-video-dumbnail) [![codecov](https://codecov.io/gh/Gumball12/generate-video-dumbnail/graph/badge.svg?token=hnkoynf9rH)](https://codecov.io/gh/Gumball12/generate-video-dumbnail)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/generate-video-dumbnail) ![NPM Downloads](https://img.shields.io/npm/dm/generate-video-dumbnail) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/generate-video-dumbnail) ![NPM Version](https://img.shields.io/npm/v/generate-video-dumbnail)
 
 Video thumbnail generator for modern browsers. Supports Windows, macOS, AOS, and the ever-pesky iOS Safari(14+).
 
 Blog post: [Generating Video Dumbnails on iOS Safari with JavaScript 💩](https://shj.rip/article/generating-video-dumbnails-on-ios-safari-with-javascript/)
 
 [Online Demo](https://gumball12.github.io/generate-video-dumbnail/)
+
+Want to contribute? Please read the [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## Installation
 
