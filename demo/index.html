@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Video Thumbnail Demo</title>
+
+    <style>
+      main {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      form {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .thumbnail {
+        img {
+          max-width: 100%;
+        }
+
+        p {
+          margin-top: 0;
+          word-break: break-all;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Generate Video Thumbnail Demo</h1>
+        <p>
+          Video thumbnail generator for modern browsers. Supports Windows,
+          macOS, AOS, and the ever-pesky iOS Safari(14+).
+        </p>
+        <p>
+          In addition this, you can pass options for Quality(JPEG), Image
+          format, Size(width or height), and Callback to be executed when Blob
+          is created.
+        </p>
+
+        <p>
+          <a
+            href="https://github.com/Gumball12/generate-video-dumbnail"
+            target="_blank"
+          >
+            View on GitHub
+          </a>
+        </p>
+
+        <p>
+          <a
+            href="https://shj.rip/generating-video-dumbnails-on-ios-safari-with-javascript/"
+          >
+            Blog post: Generating Video Dumbnails on iOS Safari with JavaScript
+            💩
+          </a>
+        </p>
+      </section>
+
+      <div>
+        <hr />
+      </div>
+
+      <section>
+        <form>
+          <input type="file" id="file-input" accept="video/*" required />
+          <div>
+            <label for="time-input">Time (in seconds):</label>
+            <input
+              type="number"
+              id="time-input"
+              value="1"
+              min="0"
+              step="0.1"
+              required
+            />
+          </div>
+          <button type="submit" id="generate-button">Generate Thumbnail</button>
+        </form>
+      </section>
+
+      <section id="thumbnail-container"></section>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+
+    <template id="thumbnail-template">
+      <div class="thumbnail">
+        <img src="" alt="Thumbnail" />
+        <p></p>
+      </div>
+    </template>
+  </body>
+</html>
