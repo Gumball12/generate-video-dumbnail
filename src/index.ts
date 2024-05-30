@@ -10,8 +10,15 @@ type GenerateVideoThumbnailOptions = Partial<{
   size: SizeOption;
   format: FormatOption;
   quality: QualityOption;
-  onBlobCreated: (data: { blob: Blob; blobUrl: string; time: number }) => void;
+  onBlobCreated: (data: {
+    blob: Blob;
+    blobUrl: string;
+    thumbnailPosition: number;
+  }) => void;
 }>;
+
+const DEFAULT_FORMAT: FormatOption = 'image/jpeg';
+const DEFAULT_QUALITY: QualityOption = 0.3;
 
 export const generateVideoThumbnail = async (
   videoElementOrSrc: VideoElementOrSrc,
@@ -62,9 +69,6 @@ const isHTTPUrl = (src: string): boolean => {
 
 const isBlobUrl = (src: string): boolean => src.startsWith('blob:');
 
-const DEFAULT_FORMAT: FormatOption = 'image/jpeg';
-const DEFAULT_QUALITY: QualityOption = 0.3;
-
 const generateVideoThumbnailWithHTTPUrl = (
   src: string,
   thumbnailPosition: number,
@@ -86,7 +90,7 @@ const generateVideoThumbnailWithHTTPUrl = (
       );
 
       const url = URL.createObjectURL(blob);
-      options?.onBlobCreated?.({ blob, blobUrl: url, time: thumbnailPosition });
+      options?.onBlobCreated?.({ blob, blobUrl: url, thumbnailPosition });
       resolve(url);
     });
   });
@@ -121,7 +125,7 @@ const generateVideoThumbnailWithBlobUrl = (
       );
 
       const url = URL.createObjectURL(blob);
-      options?.onBlobCreated?.({ blob, blobUrl: url, time: thumbnailPosition });
+      options?.onBlobCreated?.({ blob, blobUrl: url, thumbnailPosition });
       resolve(url);
     });
 
