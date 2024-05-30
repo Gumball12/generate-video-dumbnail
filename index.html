@@ -14,7 +14,7 @@
         gap: 1rem;
       }
 
-      form {
+      section.generate {
         display: flex;
         gap: 1rem;
         flex-wrap: wrap;
@@ -31,7 +31,7 @@
         }
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-CztYlxNV.js"></script>
+    <script type="module" crossorigin src="/assets/index-c52MaRjm.js"></script>
   </head>
   <body>
     <main>
@@ -70,22 +70,20 @@
         <hr />
       </div>
 
-      <section>
-        <form>
-          <input type="file" id="file-input" accept="video/*" required />
-          <div>
-            <label for="time-input">Time (in seconds):</label>
-            <input
-              type="number"
-              id="time-input"
-              value="1"
-              min="0"
-              step="0.1"
-              required
-            />
-          </div>
-          <button type="submit" id="generate-button">Generate Thumbnail</button>
-        </form>
+      <section class="generate">
+        <input type="file" id="file-input" accept="video/*" required />
+        <div>
+          <label for="time-input">Time (in seconds):</label>
+          <input
+            type="number"
+            id="time-input"
+            value="1"
+            min="0"
+            step="0.1"
+            required
+          />
+        </div>
+        <button id="generate-button">Generate Thumbnail</button>
       </section>
 
       <section id="thumbnail-container"></section>
