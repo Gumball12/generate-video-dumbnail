@@ -2,7 +2,9 @@ import { generateVideoThumbnail } from '../../src';
 
 const fileInput = document.querySelector<HTMLInputElement>('input#file-input')!;
 const timeInput = document.querySelector<HTMLInputElement>('input#time-input')!;
-const form = document.querySelector<HTMLFormElement>('form')!;
+const generateButton = document.querySelector<HTMLButtonElement>(
+  'button#generate-button',
+)!;
 
 const thumbnailContainer = document.querySelector<HTMLDivElement>(
   'section#thumbnail-container',
@@ -11,9 +13,7 @@ const thumbnailTemplate = document.querySelector<HTMLTemplateElement>(
   'template#thumbnail-template',
 )!;
 
-form.addEventListener('submit', async event => {
-  event.preventDefault();
-
+generateButton.addEventListener('click', async () => {
   const file = fileInput.files?.[0];
   if (!file) {
     alert('Please select a file');
