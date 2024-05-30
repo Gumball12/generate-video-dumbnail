@@ -22,6 +22,9 @@ pnpm add generate-video-dumbnail
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/generate-video-dumbnail/dist/index.iife.js"></script>
+<script>
+  generateVideoThumbnail.generateVideoThumbnail(/* ... */);
+</script>
 ```
 
 ## Usage
