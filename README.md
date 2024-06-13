@@ -4,7 +4,7 @@
 
 Video thumbnail generator for modern browsers. Supports Windows, macOS, AOS, and the ever-pesky iOS Safari(14+).
 
-Blog post: [Generating Video Dumbnails on iOS Safari with JavaScript 💩](https://shj.rip/article/generating-video-dumbnails-on-ios-safari-with-javascript.html)
+Blog post: [How to Generate Video Thumbnails Correctly in iOS Safari 🔍](https://shj.rip/article/how-to-generate-video-thumbnails-correctly-in-ios-safari.html)
 
 [Online Demo](https://gumball12.github.io/generate-video-dumbnail/)
 
