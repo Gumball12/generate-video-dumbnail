@@ -2,7 +2,12 @@
 
 ## Setup
 
+- Corepack can be used to install pnpm.
+- Please use Node.js v20 or higher.
+
 ```bash
+corepack enable # install pnpm via corepack
+
 git clone https://github.com/<username>/generate-video-dumbnail.git
 cd generate-video-dumbnail
 
